@@ -1,0 +1,15 @@
+.hello-world-wrapper {
+    margin-left:25%;
+    margin-top: 2%;
+    text-align: center;
+    width:50%;
+    border: 1px solid lightgray;
+}
+
+.hello-world-title {
+    font-weight: bolder;
+}
+
+.hello-world-text {
+    color: crimson;
+}
