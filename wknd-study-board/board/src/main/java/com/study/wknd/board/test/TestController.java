@@ -1,4 +1,4 @@
-package com.study.wknd.board.Test;
+package com.study.wknd.board.test;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
