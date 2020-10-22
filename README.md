@@ -1,5 +1,6 @@
 # w_s_b
 weekend-study-board
+- Rename Study as Muskets
 Studying with HT.Ryu
 
 Main Concept
