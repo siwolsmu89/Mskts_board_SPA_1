@@ -1,7 +1,7 @@
 # w_s_b
 weekend-study-board
 - Rename Study as Muskets
-Studying with HT.Ryu
+- Studying with HT.Ryu
 
 Main Concept
 - Create a new Project with Spring Boot & React
