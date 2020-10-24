@@ -1,4 +1,4 @@
-# w_s_b
+# mskts
 weekend-study-board
 - Rename Study as Muskets
 - Studying with HT.Ryu
