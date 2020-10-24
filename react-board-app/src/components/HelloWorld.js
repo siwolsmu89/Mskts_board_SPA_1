@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import InputString2 from './InputString2';
 
 require('./HelloWorld.css');
 
@@ -9,7 +10,7 @@ export default class HelloWorld extends Component {
     }
 
     hello = () => {
-        fetch('/home')
+        fetch('/date')
         .then(response => response.text())
         .then(text => this.setState({message: text}));
     }
@@ -19,8 +20,10 @@ export default class HelloWorld extends Component {
             <div className="hello-world-wrapper">
                 <h1 className="hello-world-title">Hello, World!</h1>
                 <p className="hello-world-text">Lorem Ipsum</p>
+                <button onClick={this.hello}>Good Day</button>
                 <p>{this.state.message}</p>
-                <button onClick={this.hello}>Hi</button>
+                <hr/>
+                <InputString2/>
             </div>
         );
     }

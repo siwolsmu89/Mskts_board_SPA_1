@@ -1,9 +1,9 @@
 package com.study.wknd.board.test;
 
-import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,17 +11,22 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     
     @Autowired
-    public TestMapper mapper;
+    TestService testService;
 
-    @RequestMapping("/home")
+    @RequestMapping("/date")
     public String board() {
-
-        Map<String, String> paramMap = new HashMap<String, String>();
-        paramMap.put("name", "test");
-
-        mapper.insertTest(paramMap);
+        testService.insertDate();
 
         System.out.println("TestController activated");
-        return "home.html";
+        return "Nice To See You.";
+    }
+
+    @RequestMapping("/insert")
+    public String insert(@RequestBody Map<String, String> param) {
+        testService.insertText(param);
+
+        System.out.println("TestController activated 2");
+        String map = param.toString();
+        return "insert Complete: " + map;
     }
 }

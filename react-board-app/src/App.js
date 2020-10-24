@@ -9,7 +9,6 @@ function App() {
         <HelloWorld/>
       </div>
     );
-  
 }
 
 export default App;
